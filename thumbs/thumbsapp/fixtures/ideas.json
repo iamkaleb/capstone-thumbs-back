@@ -1,0 +1,52 @@
+[
+    {
+        "model": "thumbsapp.idea",
+        "pk": 1,
+        "fields": {
+            "user_id": 1,
+            "poll_id": 1,
+            "title": "McDonalds",
+            "description": "They got Big Macs"
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 2,
+        "fields": {
+            "user_id": 2,
+            "poll_id": 1,
+            "title": "Pizza Hut",
+            "description": "This is my favorite place to eat"
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 3,
+        "fields": {
+            "user_id": 3,
+            "poll_id": 1,
+            "title": "Two Boots",
+            "description": "Big fan of the cornmeal crust. Plus their Pepperoni is THA BOMB."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 4,
+        "fields": {
+            "user_id": 2,
+            "poll_id": 2,
+            "title": "Terraria",
+            "description": "It's sick dawg. Just upvote this forreal."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 5,
+        "fields": {
+            "user_id": 1,
+            "poll_id": 2,
+            "title": "Baldur's Gate",
+            "description": "Ive been wanting to play this one for a while. Plus Baldur's gate three is coming out soon. Or eventually."
+        }
+    }
+]

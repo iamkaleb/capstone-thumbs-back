@@ -1,0 +1,22 @@
+[
+    {
+        "model": "thumbsapp.poll",
+        "pk": 1,
+        "fields": {
+            "user_id": 1,
+            "group_id": 2,
+            "title": "Where should we eat?",
+            "description": "Vote on restaurant/eating possibilities so we can narrow down the options a bit!"
+        }
+    },
+    {
+        "model": "thumbsapp.poll",
+        "pk": 2,
+        "fields": {
+            "user_id": 2,
+            "group_id": 1,
+            "title": "What game should we play?",
+            "description": "Feel free to add games. Looking for co-op games - especially local co-op."
+        }
+    }
+]

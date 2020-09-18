@@ -6,6 +6,8 @@ from thumbsapp.views import *
 from thumbsapp.models import *
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'groups', Groups, 'group')
+router.register(r'groupusers', GroupUsers, 'groupuser')
 
 urlpatterns = [
     path('', include(router.urls)),

@@ -3,9 +3,9 @@
         "model": "thumbsapp.group",
         "pk": 1,
         "fields": {
-            "title": "Boy's Town",
+            "title": "Public",
             "creator_id": 1,
-            "description": "This is a roommates only group."
+            "description": "Public"
         }
     },
     {
@@ -15,6 +15,15 @@
             "title": "Kaleb's Friends",
             "creator_id": 3,
             "description": "This is a group for Kaleb's friends only."
+        }
+    },
+    {
+        "model": "thumbsapp.group",
+        "pk": 3,
+        "fields": {
+            "title": "Boy's Town",
+            "creator_id": 1,
+            "description": "This is a roommates only group."
         }
     }
 ]

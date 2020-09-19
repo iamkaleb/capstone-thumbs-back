@@ -1,0 +1,82 @@
+[
+    {
+        "model": "thumbsapp.idea",
+        "pk": 1,
+        "fields": {
+            "user_id": 1,
+            "poll_id": 1,
+            "title": "McDonalds",
+            "description": "They got Big Macs"
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 2,
+        "fields": {
+            "user_id": 2,
+            "poll_id": 1,
+            "title": "Pizza Hut",
+            "description": "This is my favorite place to eat"
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 3,
+        "fields": {
+            "user_id": 3,
+            "poll_id": 1,
+            "title": "Two Boots",
+            "description": "Big fan of the cornmeal crust. Plus their Pepperoni is THA BOMB."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 4,
+        "fields": {
+            "user_id": 2,
+            "poll_id": 2,
+            "title": "Terraria",
+            "description": "It's sick dawg. Just upvote this forreal."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 5,
+        "fields": {
+            "user_id": 1,
+            "poll_id": 2,
+            "title": "Baldur's Gate",
+            "description": "Ive been wanting to play this one for a while. Plus Baldur's gate three is coming out soon. Or eventually."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 6,
+        "fields": {
+            "user_id": 3,
+            "poll_id": 3,
+            "title": "Heath",
+            "description": "Something about that chocolate and toffee mix. This is the best candy to add to literally any other dessert as a topping or filling: ice cream, cake, brownies, whatever."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 7,
+        "fields": {
+            "user_id": 2,
+            "poll_id": 3,
+            "title": "Reese's",
+            "description": "I'll tear up a bag of these and fall asleep in the remains."
+        }
+    },
+    {
+        "model": "thumbsapp.idea",
+        "pk": 8,
+        "fields": {
+            "user_id": 1,
+            "poll_id": 3,
+            "title": "Sour Patch Kids",
+            "description": "You already know what it is."
+        }
+    }
+]

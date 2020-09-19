@@ -10,7 +10,6 @@ class Poll(models.Model):
     group = models.ForeignKey(Group, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=250)
-    deadline = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         verbose_name = ('Poll')

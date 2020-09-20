@@ -21,6 +21,7 @@ class GroupSerializer(serializers.ModelSerializer):
             'description'
         )
         depth = 1
+
 class Groups(ViewSet):
     '''Groups for Thumbs app'''
 
@@ -79,7 +80,7 @@ class Groups(ViewSet):
     def list(self, request):
         '''Handle GET requests for all groups
         Returns:
-            Response -- JSON serialized list of product instances
+            Response -- JSON serialized list of group instances
         '''
 
         groups = Group.objects.all()
@@ -87,5 +88,3 @@ class Groups(ViewSet):
         serializer = GroupSerializer(groups, many=True, context={'request': request})
 
         return Response(serializer.data)
-
-

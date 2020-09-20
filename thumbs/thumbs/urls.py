@@ -10,6 +10,8 @@ router.register(r'groups', Groups, 'group')
 router.register(r'groupusers', GroupUsers, 'groupuser')
 router.register(r'polls', Polls, 'poll')
 router.register(r'ideas', Ideas, 'idea')
+router.register(r'votes', Votes, 'vote')
+router.register(r'users', Users, 'user')
 
 urlpatterns = [
     path('', include(router.urls)),

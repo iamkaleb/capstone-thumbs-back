@@ -1,0 +1,65 @@
+[
+    {
+        "model": "thumbsapp.vote",
+        "pk": 1,
+        "fields": {
+            "user_id": 1,
+            "idea_id": 6,
+            "voteDirection": 1
+        }
+    },
+    {
+        "model": "thumbsapp.vote",
+        "pk": 2,
+        "fields": {
+            "user_id": 2,
+            "idea_id": 6,
+            "voteDirection": -1
+        }
+    },
+    {
+        "model": "thumbsapp.vote",
+        "pk": 3,
+        "fields": {
+            "user_id": 3,
+            "idea_id": 6,
+            "voteDirection": 1
+        }
+    },
+    {
+        "model": "thumbsapp.vote",
+        "pk": 4,
+        "fields": {
+            "user_id": 2,
+            "idea_id": 7,
+            "voteDirection": 1
+        }
+    },
+    {
+        "model": "thumbsapp.vote",
+        "pk": 5,
+        "fields": {
+            "user_id": 1,
+            "idea_id": 8,
+            "voteDirection": -1
+        }
+    },
+    {
+        "model": "thumbsapp.vote",
+        "pk": 6,
+        "fields": {
+            "user_id": 2,
+            "idea_id": 8,
+            "voteDirection": -1
+        }
+    },
+    {
+        "model": "thumbsapp.vote",
+        "pk": 7,
+        "fields": {
+            "user_id": 3,
+            "idea_id": 8,
+            "voteDirection": -1
+        }
+    }
+]

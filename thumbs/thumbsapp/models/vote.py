@@ -8,7 +8,7 @@ class Vote(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     idea = models.ForeignKey(Idea, on_delete=models.DO_NOTHING)
-    voteDirection = models.BooleanField()
+    voteDirection = models.IntegerField()
 
     class Meta:
         verbose_name = ('Vote')

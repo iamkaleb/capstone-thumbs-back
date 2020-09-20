@@ -47,11 +47,11 @@ class Votes(ViewSet):
         '''
 
         new_vote = Vote()
-        user = User.objects.get(user=request.auth.user)
+        user = User.objects.get(pk=request.auth.user.id)
 
-        new_vote.vote_direction = request.data['voteDirection']
+        new_vote.voteDirection = request.data['voteDirection']
         new_vote.user = user
-        new_vote.idea = request.data['idea']
+        new_vote.idea_id = request.data['ideaId']
 
         new_vote.save()
 

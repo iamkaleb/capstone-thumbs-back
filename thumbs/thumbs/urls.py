@@ -8,6 +8,8 @@ from thumbsapp.models import *
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'groups', Groups, 'group')
 router.register(r'groupusers', GroupUsers, 'groupuser')
+router.register(r'polls', Polls, 'poll')
+router.register(r'ideas', Ideas, 'idea')
 
 urlpatterns = [
     path('', include(router.urls)),

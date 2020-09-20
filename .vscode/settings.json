@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder:capstone-thumbs-back}/thumbs/db.sqlite3",
+            "driver": "SQLite",
+            "name": "thumbs2",
+            "previewLimit": 50
+        }
+    ]
+}

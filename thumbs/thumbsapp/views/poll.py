@@ -48,10 +48,12 @@ class Polls(ViewSet):
         '''
 
         new_poll = Poll()
-        user = User.objects.get(user=request.auth.user)
+        user = User.objects.get(pk=request.auth.user.id)
+        group = Group.objects.get(pk=request.data['groupId'])
 
-        new_poll.title = request.data['title']
         new_poll.user = user
+        new_poll.group = group
+        new_poll.title = request.data['title']
         new_poll.description = request.data['description']
 
         new_poll.save()

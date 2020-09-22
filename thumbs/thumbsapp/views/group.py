@@ -20,7 +20,6 @@ class GroupSerializer(serializers.ModelSerializer):
             'creator',
             'description'
         )
-        depth = 1
 
 class Groups(ViewSet):
     '''Groups for Thumbs app'''
@@ -84,6 +83,11 @@ class Groups(ViewSet):
         '''
 
         groups = Group.objects.all()
+
+        title = self.request.query_params.get('title', None)
+
+        if title is not None:
+            groups = groups.filter(group__title=title)
 
         serializer = GroupSerializer(groups, many=True, context={'request': request})
 

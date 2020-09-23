@@ -48,8 +48,9 @@ class Ideas(ViewSet):
         '''
 
         new_idea = Idea()
-        user = User.objects.get(user=request.auth.user)
+        user = User.objects.get(pk=request.auth.user.id)
 
+        new_idea.poll_id = request.data['pollId']
         new_idea.title = request.data['title']
         new_idea.user = user
         new_idea.description = request.data['description']

@@ -45,8 +45,8 @@ class IdeaImages(ViewSet):
 
         new_idea_image = IdeaImage()
 
-        new_idea.idea_id = request.data['ideaId']
-        new_idea.url = request.data['url']
+        new_idea_image.idea_id = request.data['ideaId']
+        new_idea_image.url = request.data['url']
 
         new_idea_image.save()
 

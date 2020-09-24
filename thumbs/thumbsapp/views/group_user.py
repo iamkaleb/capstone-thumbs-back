@@ -84,7 +84,14 @@ class GroupUsers(ViewSet):
         
         group_users = GroupUser.objects.all()
 
-        if request.user.id:
+        group = self.request.query_params.get('group', None)
+
+        user = self.request.query_params.get('user', None)
+
+        if group is not None:
+            group_users = group_users.filter(group__id=group)
+
+        if user is not None:
             group_users = group_users.filter(user__id=request.user.id)
 
         serializer = GroupUserSerializer(group_users, many=True, context={'request': request})

@@ -46,11 +46,10 @@ class GroupUsers(ViewSet):
         '''
 
         new_group_user = GroupUser()
-        user = User.objects.get(user=request.auth.user)
+        user = User.objects.get(pk=request.auth.user.id)
 
-        new_group_user.title = request.data['title']
+        new_group_user.group_id = request.data['groupId']
         new_group_user.user = user
-        new_group_user.description = request.data['description']
 
         new_group_user.save()
 

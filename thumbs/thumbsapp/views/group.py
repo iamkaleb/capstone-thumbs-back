@@ -46,7 +46,7 @@ class Groups(ViewSet):
         '''
 
         new_group = Group()
-        creator = User.objects.get(user=request.auth.user)
+        creator = User.objects.get(pk=request.auth.user.id)
 
         new_group.title = request.data['title']
         new_group.creator = creator

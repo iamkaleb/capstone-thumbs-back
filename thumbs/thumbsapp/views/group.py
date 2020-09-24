@@ -86,8 +86,13 @@ class Groups(ViewSet):
 
         title = self.request.query_params.get('title', None)
 
+        search = self.request.query_params.get('search', None)
+
         if title is not None:
             groups = groups.filter(group__title=title)
+
+        if search is not None:
+            groups = groups.filter(title__startswith=search)
 
         serializer = GroupSerializer(groups, many=True, context={'request': request})
 

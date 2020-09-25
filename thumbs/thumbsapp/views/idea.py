@@ -42,7 +42,7 @@ class Ideas(ViewSet):
             return HttpResponseServerError(ex)
     
     def create(self, request):
-        '''Handle POST operations
+        '''Handle POST operations for a single idea
         Returns:
             Response -- JSON serialized idea instance
         '''
@@ -60,6 +60,18 @@ class Ideas(ViewSet):
         serializer = IdeaSerializer(new_idea, context={'request': request})
 
         return Response(serializer.data)
+
+    def update(self, request, pk=None):
+        '''Handle PUT requests for a single idea
+            Response -- JSON serialized idea instance
+        '''
+
+        edited_idea = Idea.objects.get(pk=pk)
+        edited_idea.title = request.data['title']
+        edited_idea.description = request.data['description']
+        edited_idea.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk=None):
         '''

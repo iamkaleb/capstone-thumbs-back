@@ -54,6 +54,17 @@ class IdeaImages(ViewSet):
 
         return Response(serializer.data)
 
+    def update(self, request, pk=None):
+        '''Handle PUT requests for a single idea image
+            Response -- JSON serialized idea instance
+        '''
+
+        edited_idea_image = IdeaImage.objects.get(pk=pk)
+        edited_idea_image.url = request.data['url']
+        edited_idea_image.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
     def destroy(self, request, pk=None):
         '''
         Handle DELETE requests for a single idea image
